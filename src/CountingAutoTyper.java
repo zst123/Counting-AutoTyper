@@ -31,9 +31,9 @@ import javax.swing.border.MatteBorder;
 
 public class CountingAutoTyper {
 
-	private JFrame frame;
+	public JFrame frame;
 	private JTextField textField;
-	JButton btnStart ;
+	public static JButton btnStart ;
 	private static final String FONT_NAME = "Arial Rounded MT Bold";
 	private JTextField textField_1;
 	private JTextField textField_2;
@@ -159,7 +159,7 @@ public class CountingAutoTyper {
 		 btnStart.setFont(new Font(FONT_NAME, Font.BOLD, 20));
 		 btnStart.setBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 215, 0), new Color(255, 215, 0)));
 	}
-	public void updateVariable(boolean on){
+	public static void updateVariable(boolean on){
 		Common.SPAM_STARTED = on;
 		if (on){
 			btnStart.setText("STOP");

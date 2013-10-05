@@ -27,7 +27,7 @@ public class Common {
 			@Override
 			public void run() {
 				for(int X = 0; X < loops; X++){  
-					if (infinite) X=100;
+					if (infinite) X=0;
 					SPAM_NUMBER++;
 					if (SPAM_STARTED){
 						keyboard.type(SPAM_NUMBER+"");
@@ -37,6 +37,8 @@ public class Common {
 					}
 					keyboard.robot.delay(delay);    		
 				}
+				SPAM_STARTED = false;
+				CountingAutoTyper.updateVariable(false);
 			}
 		};	
 		Thread d = new Thread(r);
