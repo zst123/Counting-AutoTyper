@@ -21,7 +21,3 @@
 1. Add in library files
     * Right-Click `Project` → `Java Build Path` → `Libraries` → `Add External JARs` → Choose `forms-1.3.0.jar`
 
-***Youtube Video of this Program***
-
-[![YOUTUBE](http://img.youtube.com/vi/_wfQHhp8HPs/0.jpg)](http://www.youtube.com/watch?v=_wfQHhp8HPs)
-
